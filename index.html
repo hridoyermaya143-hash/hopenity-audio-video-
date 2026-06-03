@@ -14,9 +14,9 @@
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
         .card { background-color: #1e1e1e; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.5); padding: 15px; }
         .card h3 { margin-bottom: 10px; font-size: 1.2rem; color: #ff4b2b; }
-        video, audio { width: 100%; border-radius: 5px; margin-bottom: 10px; }
+        video, audio { width: 100%; border-radius: 5px; margin-bottom: 10px; background: #000; }
         .download-btn { display: inline-block; width: 100%; text-align: center; background-color: #ff4b2b; color: white; padding: 10px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; }
-        .download-btn:hover { background-color: #ff416c; }
+        .download-btn:hover { background-color: #ff416c; transform: scale(1.02); }
     </style>
 </head>
 <body>
@@ -30,35 +30,29 @@
     <!-- ভিডিও সেকশন -->
     <h2 class="section-title">ভিডিও স্টক (Video Stocks)</h2>
     <div class="grid">
-        <!-- ভিডিও ১ -->
         <div class="card">
             <h3>Nature Clip 4K</h3>
-            <!-- এখানে আপনার ভিডিওর লিংক বসাবেন -->
-            <video controls>
+            <video controls preload="metadata">
                 <source src="YOUR_VIDEO_LINK_HERE.mp4" type="video/mp4">
                 আপনার ব্রাউজারটি ভিডিও সাপোর্ট করে না।
             </video>
             <a href="YOUR_DOWNLOAD_LINK_HERE" class="download-btn" target="_blank">ডাউনলোড করুন</a>
         </div>
-        <!-- আরো ভিডিও যোগ করতে ওপরের কার্ডটি কপি-পেস্ট করুন -->
     </div>
 
     <!-- অডিও সেকশন -->
     <h2 class="section-title">অডিও স্টক (Audio Stocks)</h2>
     <div class="grid">
-        <!-- অডিও ১ -->
         <div class="card">
-            <h3>Cinematic Background Music</h3>
-            <!-- এখানে আপনার অডিওর লিংক বসাবেন -->
-            <audio controls>
-                <source src="YOUR_AUDIO_LINK_HERE.mp3" type="audio/mpeg">
+            <h3>Sura</h3>
+            <audio controls preload="metadata">
+                <source src="sura.mp3" type="audio/mpeg">
                 আপনার ব্রাউজারটি অডিও সাপোর্ট করে না।
             </audio>
-            <a href="YOUR_DOWNLOAD_LINK_HERE" class="download-btn" target="_blank">ডাউনলোড করুন</a>
+            <a href="https://drive.google.com/file/d/1zHgxgHIDSoTRXl3oQD1lTELgZAvm-Z9F/view" class="download-btn" target="_blank">ডাউনলোড করুন</a>
         </div>
-        <!-- আরো অডিও যোগ করতে ওপরের কার্ডটি কপি-পেস্ট করুন -->
     </div>
 </div>
 
 </body>
-</html>
+    </html>
